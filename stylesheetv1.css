@@ -1,0 +1,529 @@
+@charset "utf-8";
+/*Above is for NAV bar*/
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+.main_nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #B43C68;
+    padding: .5em;
+    margin: 0;
+}
+
+/* style nav links */
+.main_nav a{
+    color: white;
+    padding: 60px 40px;
+    text-decoration: none;
+}
+
+/* hover style */
+.main_nav a:hover {
+    background-color: white;
+    color: #007B7D;
+    padding: 1.8em;
+}
+/*Above is for NAV bar*/
+
+/* Hero image/header */
+.hero_image {
+    background-image: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/homepage_images/hero_image.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero_header {
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+.hero_text {
+    text-align: left;
+    position: absolute;
+    color: #00CED1;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 50px;
+}
+/* Hero image/header */
+
+/*Text and color */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F5F5DC;
+    padding: 15px;
+}
+h1 {
+    color:#007B7D;
+    font-size: 40px;
+    padding: 10px;
+}
+h2 {
+    color:#007B7D;
+    font-size: 30px;
+    padding: 10px;
+}
+h3 {
+    color:#007B7D;
+    font-size: 25px;
+}
+p {
+    color: #B43C68;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 10px;
+}
+.message {
+    color: #B43C68;
+}
+img {
+    padding: 10px;
+}
+
+/*Text and color above */
+
+/*grid for index*/
+#index_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        'Community1      Community2    Community3   Community4'
+        'Community5      Community5    Community5   Community5'
+        'product         product       product      product'
+        'product1        product2      product3     product4'
+        'class0          class0        class0       class0'
+        'class1          class2        class2       class3'
+        'reviews         reviews       reviews      reviews'
+        'newletter       newletter     newletter    newletter'
+        'footer          footer        footer       footer';
+        justify-items: center;
+        margin: 0 auto;
+}
+
+#Community1 {
+    grid-area: Community1;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#Community2 {
+    grid-area: Community2;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#Community3 {
+    grid-area: Community3;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#Community4 {
+    grid-area: Community4;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#Community5 {
+    grid-area: Community5;
+}
+#product {
+    grid-area: product;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+#product1 {
+    grid-area: product1;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#product2 {
+    grid-area: product2;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#product3 {
+    grid-area: product3;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#product4 {
+    grid-area: product4;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+#class0 {
+    grid-area: class0;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+#class1 {
+    grid-area: class1;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#class2 {
+    grid-area: class2;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#class3 {
+    grid-area: class3;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#reviews {
+    grid-area: reviews;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+    color: #B43C68;
+}
+
+#newletter {
+    grid-area: newletter;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+    color: #B43C68;
+}
+
+#footer {
+    grid-area: footer;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+/*Above is grid for index*/
+
+/*grid for menu*/
+.menu_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    grid-template-areas:
+        'menu             menu           menu'
+        'product1         product2       product3'
+        'product4         product5       product6'
+        'product7         product8       product9'
+        'footer           footer         footer'
+}
+
+.menu {
+    grid-area: menu;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+.product1 {
+    grid-area: product1;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+.product2 {
+    grid-area: product2;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+.product3 {
+    grid-area: product3;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+.product4 {
+    grid-area: product4;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+.product5 {
+    grid-area: product5;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+.product6 {
+    grid-area: product6;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+.product7 {
+    grid-area: product7;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+.product8 {
+    grid-area: product8;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+.product9 {
+    grid-area: product9;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+.footer {
+    grid-area: footer;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+/*Above is grid for menu*/
+
+/*Button*/
+
+.button {
+    background-color: rgb(194, 194, 194);
+    border: none;
+    color: #007B7D;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 3px 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/*Above is Button*/
+
+/*--------- Media querie---------*/
+/*-----check for min vs max width------*/
+@media screen and (max-width: 800px){
+
+    #index_grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+            'Community1     Community2'
+            'Community5     Community5'
+            'Community3     Community4'
+            'product        product'
+            'product1       product2'
+            'product3       product4'
+            'class0         class0'
+            'class1         class1'
+            'class2         class3'
+            'reviews        reviews'
+            'newletter      newletter'
+            'footer         footer'
+        ;
+        justify-items: center;
+        background-color: #F5F5DC;
+        margin: 0;
+    }
+    .main_nav {
+        padding: 40px 20px;
+    }
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    #index_grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            'Community1'
+            'Community2'
+            'Community3'
+            'Community4'
+            'Community5'
+            'product'
+            'product1'
+            'product2'
+            'product3'
+            'product4'
+            'class0'
+            'class1'
+            'class2'
+            'class3'
+            'reviews'
+            'newletter'
+            'footer'
+        ;
+        justify-items: center;
+        background-color: #F5F5DC;
+        margin: 0;
+    }
+    .main_nav {
+        padding: .9em;
+        font-size: 10px;
+    }
+    #welcome {
+        grid-area: welcome;
+        margin: 0px 100px 0px 100px;
+    }
+}
+
+/*-----Grid for contact belown------*/
+
+#contact_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+        'into           into            into'
+        'kidclass       kidclass        kidclass'
+        'coupleclass    coupleclass     coupleclass'
+        'bakingclass    bakingclass     bakingclass'
+        'message        message         message'
+        'info           info            info'
+        'footer         footer          footer';
+        justify-items: center;
+        margin: 0 auto;
+}
+
+#into {
+    grid-area: into;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+#kidclass {
+    grid-area: kidclass;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+#coupleclass {
+    grid-area: coupleclass;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#bakingclass {
+    grid-area: bakingclass;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#message {
+    grid-area: message;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+#info {
+    grid-area: info;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+#footer {
+    grid-area: footer;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+
+/*-----Grid for contact above------*/
+
+#aboutus_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+        'about           about            about'
+        'online          online           online'
+        'community       community        community'
+        'head            head             head'
+        'lead            lead             lead'
+        'info            info             info'
+        'footer          footer           footer';
+        justify-items: center;
+        margin: 0 auto;
+}
+
+#about {
+    grid-area: about;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+#online {
+    grid-area: online;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+#community {
+    grid-area: community;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#head {
+    grid-area: head;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+#lead {
+    grid-area: lead;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+#footer {
+    grid-area: footer;
+    object-fit: cover;
+    text-align: center;
+    margin: 15px;
+}
+
+/*-----Grid for about us belown------*/

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissful bites</title>
+    <link rel="stylesheet" href="stylesheetv1.css">
+</head>
+
+<body> 
+
+    <header>
+
+        <nav>
+            <!--Index is the home page/landing page-->
+            <!--W/in the directory just need the file name to link-->
+            <ul class="main_nav">
+                <li class="logo"><img src="images/homepage_images/logo.png" alt="Blissful bites logo" width="50"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Baking hub</a></li>
+                <li><a href="menu/menu.html">Menu</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero_image">
+            <h1 class="hero_image"></h1>
+            <p class="hero_text">We are Blissful Bites</p>
+        </div>
+
+ <!--HIGHLIGHTS ABOUT YOUR BUSINESS-->
+
+<div>
+     <!--About us-->
+        <!--all upper case letters are markers, shoud be removed from contect of site-->
+        <h1>Welcome to Blissful Bites, Where flavor meets bliss</h1>
+           <p> Step into our pleasant corner of Lakeland, where every day begins with the aroma of freshly baked goods and the comforting hum of friendly conversation. Blissful Bites is more than just a bakery and cafe, it's a gathering place for locals of all ages to come together, relax, and connect. Learn more about us by clicking <a href="contact.html" class="button">here!</a></p>
+
+</div>
+
+<h1>Sale summer!! Click here for a coupon code!!</h1>
+
+<p>$5 off any online order of $35 or more:</p>
+
+<button id="generateButton" class="button">Click for coupon!</button>
+
+<p id="couponCode"></p>
+
+<script>
+document.getElementById('generateButton').addEventListener('click', function() {
+    // Function to generate a random alphanumeric string
+    function generateRandomString(length) {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let result = '';
+        for (let i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        return result;
+    }
+
+    // Generate a random coupon code
+    const couponCode = generateRandomString(8); // Adjust the length of the coupon code as needed
+
+    // Display the coupon code
+    document.getElementById('couponCode').textContent = 'Your coupon code is: ' + couponCode;
+});
+</script>
+
+<div>
+<!-- Add call to action here-->
+    <h2>Come join us at Blissful bites</h2>
+        <p>Here at Blissful bites we offer many things!! we offer baking classes for childen, couple date night baking, and baking classes. <a href="contact.html" class="button">Learn more</a></p>
+            
+        <p>We also, offer many amazing product for sale and you can place a online order here! <a href="menu/menu.html" class="button">Online order</a> or go to our menu page here to see more about our products! <a href="menu/menu.html" class="button">Menu</a></p>
+
+</div>
+
+</header>
+
+<main>
+   <!-- main element contains the main content on the page-->
+
+
+    <!--Highlights about the business
+    <h2>community driven and family oriented</h2>-->
+
+
+<div id="index_grid">
+
+    <div id="Community1">
+        <img src="images/homepage_images/coffee_in_a_circle.jpg" alt="coffee in a circle" width="250">
+            <p>Blissful Bites transcends the typical bakery experience; it's a beloved meeting spot where locals of every age can gather, unwind, and forge connections.</p>
+    </div>
+
+    <div id="Community2">
+        <img src="images/homepage_images/hands_in_a_circle.jpg" alt="hands in a circle" width="250">
+            <p>it's a cherished rendezvous point where community members from all walks of life converge to relax, rejuvenate, and foster meaningful relationships.</p>
+    </div>        
+
+    <div id="Community3">
+        <img src="images/homepage_images/people_in_a_shop.jpg" alt="people in the shop" width="250">
+            <p>As a cherished, family-owned establishment, we're dedicated to providing daily baked goods with a generous serving of authentic hospitality.</p>
+    </div>
+
+    <div id="Community4">
+        <img src="images/homepage_images/networking.jpg" alt="people networking" width="250">
+            <p>Peaceful place for professionals to work and network, our doors are wide open, ready to welcome you to our table.</p>
+    </div>
+    
+
+<div id="Community5">
+
+    <h2>Discover the heartbeat of our community!</h2>
+
+    <p>Visit Lakelandgov for events, a page to explore a vibrant array of local events happening in the area. From cultural festivals to charity drives, art exhibitions to neighborhood gatherings <a href="https://www.lakelandgov.net/events/">Visit here!</a></p>
+
+</div>
+
+
+    
+    <!--Products-->
+    <div id="product">
+        <h2>Fan Favorites</h2>
+    </div>
+
+    <div id="product1">
+
+        <img src="images/homepage_images/fan_favorites/brownie.jpg" alt="brownie" width="150">
+                <p>Enjoy our beloved brownie, a rich delight topped with fudge syrup, irresistible and simply decadent for all.</p>
+    </div>              
+
+    <div id="product2">
+
+        <img src="images/homepage_images/fan_favorites/blueberry_muffin.jpg" alt="blueberry muffins" width="175">
+                <p>Our popular blueberry muffin, filled with juicy blueberries bursting with flavor in each delicious mouthful!</p>
+    </div>            
+
+    <div id="product3">
+
+        <img src="images/homepage_images/fan_favorites/double_chocolate_chip_cookies.jpg" alt="double chocolate chip cookies" width="150">
+                <p>Indulge in our top-selling double chocolate chip cookies, featuring rich cocoa and decadent chocolate chips.</p>
+    </div>
+
+    <div id="product4">
+
+        <img src="images/homepage_images/fan_favorites/double_chocolate_cupcake.jpg" alt="double chocolate cupcake" width="175">
+                <p>Enjoy our beloved double chocolate cupcake, blending moist cake, rich frosting, and an Oreo for indulgence!</p>
+    </div>
+
+<div id="class0">
+    <h2>At Blissful Bites we offer many classes for everyone to enjoy!!</h2>
+</div>    
+    <div id="class1">
+
+    <h3>Childen baking class</h3>
+                <img src="images/homepage_images/kid_class3.jpg" alt="kid putting eggs into a mixing bowl" width="350">
+                <p>Unleash your child's inner chef with our baking classes at Blissful Bites Bakery! <a href="about.html" class="button">Children baking</a></p>
+    </div>
+
+    <div id="class2">
+
+            <h3>Couple date night baking class</h3>
+                <img src="images/homepage_images/Couple_baking1.jpg" width="350" alt="couple baking together">
+                <p>Ignite your passion for baking and romance with our exclusive Date Night Baking experience at Blissful Bites Bakery! <a href="about.html" class="button">Date night baking</a></p>
+    </div>
+
+    <div id="class3">
+
+            <h3>Baking classes</h3>
+                <img src="images/homepage_images/women_holding_cookie.jpg" alt="holding cookies" width="350">
+                <p>Discover the joy of baking with our classes at Blissful Bites Bakery! <a href="about.html" class="button">Baking classes</a></p>
+    </div>
+  
+ <div id="reviews">
+
+        <br>
+
+        <!--Insert reviews of Blissful bites-->
+
+        <h2>Reviews from customers</h2>
+
+            <ol>
+
+        <li>"Emily H." "Blissful Bites is my go-to spot for a morning pick-me-up! Their croissants are always flaky and delicious, and the atmosphere is so cozy and welcoming."</li>
+
+        <li>"Daniel S." "I can't get enough of the blueberry muffins at Blissful Bites! They're the perfect balance of sweetness and tartness, and they make for a delightful snack any time of day."</li>
+
+        <li>"Sophia L." "As a busy professional, I appreciate having a place like Blissful Bites to unwind and catch up on work. Their coffee is top-notch, and the staff is always friendly and accommodating."</li>
+
+        <li>"Benjamin W." "Blissful Bites never disappoints! Their double chocolate chip cookies are to die for - so soft and chewy with just the right amount of chocolatey goodness."</li>
+
+        <li>"Olivia M." "I love bringing my family to Blissful Bites on the weekends. The kids can't get enough of the cupcakes, and I always enjoy sipping on their delicious lattes while we chat and relax."</li>
+
+        <li>"Ethan C." "Blissful Bites is my go-to spot for a quick lunch or snack. Their sandwiches are always fresh and flavorful, and the ambiance is perfect for catching up with friends."</li>
+
+        <li>"Ava R." "I recently ordered a custom cake from Blissful Bites for my daughter's birthday, and it was a hit! Not only was it beautifully decorated, but it tasted absolutely amazing."</li>
+        
+            </ol>
+
+    </div>
+
+
+    <div id="newletter">
+                        <!--add another category here-->
+                        <!-- Can add contact info or add contact us box-->
+                        <!--Sign up for newletter, discounts and deals-->
+        <h2>Join our newletter!</h2>
+        <p>Don’t miss a thing! sign up for updates, deals and discounts!</p>
+        <div><label for="email">Email:</label><input type="email" name="email" id="email"></div>
+        <a href="about.html" class="button">Sign up</a>
+
+    </div>
+
+    <div id="footer">
+        <footer>
+            <!--Footer content typically includes copyright, secondary navigation, (fake business note)-->
+            <p><small>This is a fictitious business; this website is for learning purposes only. All copyright &copy; 2024, Blissful Bites.</small></p>
+        </footer>
+    </div>
+</div>
+
+</main>
+
+</body>
+</html>
